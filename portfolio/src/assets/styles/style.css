@@ -1,0 +1,337 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Martian Mono";
+  font-weight: 800;
+  font-size: 2.8rem;
+}
+
+h2 {
+  font-family: "Martian Mono";
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: "Martian Mono";
+  font-size: 1rem;
+}
+
+a,
+p {
+  font-family: Roboto;
+}
+
+li {
+  list-style-type: none;
+}
+
+a,
+p {
+  text-decoration: none;
+  color: #555555;
+}
+
+.container {
+  padding: 5% 15%;
+}
+
+.span-blue {
+  color: #457b9d;
+}
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+/* -------------------- NAVBAR --------------------*/
+
+.navbar .container {
+  background-color: #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 15%;
+}
+
+.navbar .container .logo {
+  font-family: "Space Grotesk";
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 16px;
+}
+
+.navbar-links li a {
+  font-size: 1.3rem;
+}
+
+.navbar-links li a:hover {
+  color: #000000;
+}
+
+/* -------------------- HEADER --------------------*/
+
+.header .container {
+  background-color: #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90vh;
+}
+
+.header .container div {
+  flex-basis: 550px;
+}
+
+.header-img {
+  width: 100%;
+  height: auto;
+}
+
+.right-header {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.right-header p {
+  font-size: 1.8rem;
+}
+
+.right-header a p {
+  display: inline-block;
+  position: relative;
+  font-weight: 500;
+  color: #457b9d;
+}
+
+.right-header a p::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #457b9d;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+.right-header a p:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* -------------------- ABOUT --------------------*/
+
+.about-me .container {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.about-me .container div {
+  flex-basis: 600px;
+}
+
+.left-about p {
+  font-size: 1.4rem;
+  line-height: 1.3;
+}
+
+.left-about h2 {
+  margin-bottom: 12px;
+}
+
+.about-img {
+  width: 100%;
+  height: auto;
+}
+
+/* -------------------- PROJECTS --------------------*/
+
+.projects {
+  background-color: #e5e7eb;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.projects .container h2 {
+  margin-bottom: 16px;
+  text-align: right;
+}
+
+.project-list {
+  background-color: #ffffff;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 16px;
+  width: 300px;
+  margin: 24px 0;
+  transition: 0.25s ease-in-out;
+}
+
+.project-list:hover {
+  transform: translate(0, -7px);
+}
+
+.ig-img {
+  width: 100%;
+  height: auto;
+}
+
+.project-desc h3 {
+  padding-bottom: 8px;
+  color: #457b9d;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: flex-start;
+  gap: 32px;
+}
+
+.card-bottom div a {
+  color: #457b9d;
+}
+
+.card-bottom div a:hover {
+  color: #000000;
+}
+
+/* -------------------- FORM --------------------*/
+
+.form .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.left-form h2 {
+  margin-bottom: 12px;
+}
+
+.left-form p {
+  font-size: 1.4rem;
+  line-height: 1.3;
+}
+
+.right-form {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background-color: #e5e7eb;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.right-form form {
+  margin-top: 30px;
+}
+
+form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.input-box label {
+  color: #333;
+  font-family: Roboto;
+  font-size: 1.1rem;
+}
+
+.input-box input,
+textarea {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  color: #555555;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-top: 8px;
+  padding: 0 15px;
+}
+textarea {
+  padding-top: 5px;
+  resize: none;
+  height: 150px;
+}
+
+.right-form button {
+  border: none;
+  background-color: #457b9d;
+  color: #ffffff;
+  height: 55px;
+  width: 100%;
+  font-size: 1rem;
+  font-family: Roboto;
+  font-weight: 500;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* -------------------- FORM --------------------*/
+
+footer .container {
+  background-color: rgb(90, 89, 89);
+  height: 30px;
+  padding: 3% 15%;
+}
+
+footer .container p {
+  color: #ffffff6b;
+  text-align: center;
+}
+
+/* -------------------- SOCIAL --------------------*/
+
+.social .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.social {
+  width: 50px;
+  height: 300px;
+  display: flex;
+  background-color: #ffffff;
+  border: 3px solid #e5e7eb;
+  border-right: 0;
+  position: fixed;
+  top: 50vh;
+  right: 0;
+  border-top-left-radius: 50px 50px;
+  border-bottom-left-radius: 50px 50px;
+}
+
+.social .container p i {
+  transition: 0.25s;
+}
+
+.social .container p i:hover {
+  transform: translate(-2px, -4px);
+  color: #000000;
+  background-color: #ffffff;
+}
